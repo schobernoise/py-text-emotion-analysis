@@ -12,7 +12,7 @@ def parse_blog_article(url):
 
     for paragraph in paragraphs:
         if not paragraph.is_boilerplate:
-            main_text += paragraph.text
+            main_text += " " + paragraph.text
             # print(paragraph.text)
 
     # Initialize the result dictionary
